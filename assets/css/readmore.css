@@ -1,0 +1,15 @@
+
+  .read-more-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0;
+    margin-top: 0.5rem;
+  }
+
+  .read-more-btn:hover {
+    text-decoration: underline;
+  }
+

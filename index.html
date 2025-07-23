@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Home - Heravuelo</title>
+  <title>Home - Hiravuelo</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -25,6 +25,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/readmore.css">
 
 </head>
 
@@ -33,9 +34,27 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-    <a href="index.html" class="logo d-flex align-items-center">
+     <a href="index.html" class="logo d-flex align-items-center">
+        <svg class="my-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
         <img src="assets/img/logonavbar.png" alt="Logo" style="max-height: 80px;">
+       
       </a>
+       
+          <g id="bgCarrier" stroke-width="0"></g>
+          <g id="tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="iconCarrier">
+            <path d="M22 22L2 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M2 11L6.06296 7.74968M22 11L13.8741 4.49931C12.7784 3.62279 11.2216 3.62279 10.1259 4.49931L9.34398 5.12486" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M15.5 5.5V3.5C15.5 3.22386 15.7239 3 16 3H18.5C18.7761 3 19 3.22386 19 3.5V8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M4 22V9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M20 9.5V13.5M20 22V17.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M15 22V17C15 15.5858 15 14.8787 14.5607 14.4393C14.1213 14 13.4142 14 12 14C10.5858 14 9.87868 14 9.43934 14.4393M9 22V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M14 9.5C14 10.6046 13.1046 11.5 12 11.5C10.8954 11.5 10 10.6046 10 9.5C10 8.39543 10.8954 7.5 12 7.5C13.1046 7.5 14 8.39543 14 9.5Z" stroke="currentColor" stroke-width="1.5"></path>
+          </g>
+        </svg>
+       
+ 
+    
 
         <nav id="navmenu" class="navmenu">
         <ul>
@@ -74,67 +93,94 @@
                     Dream Homes Await
                   </span>
                   <h1>Find Your Ideal Property with Expert Guidance</h1>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Connect with verified real estate professionals.</p>
+                  <p>Our trusted real estate professionals are here to help you every step of the way from search to settlement. Personalized support. Verified experts. Seamless experience.</p>
                 </div>
 
                 <div class="search-container" data-aos="fade-up" data-aos-delay="300">
                   <div class="search-header">
-                    <h3>Start Your Property Search</h3>
-                    <p>Discover thousands of verified listings</p>
+                    <h3>Message Us</h3>
+                    <p>Discover your perfect home or investment with confidence.</p>
                   </div>
 
                   <form action="" class="property-search-form">
                     <div class="search-grid">
                       <div class="search-field">
-                        <label for="search-location" class="field-label">Location</label>
-                        <input type="text" id="search-location" name="location" placeholder="Enter city or neighborhood" required="">
-                        <i class="bi bi-geo-alt field-icon"></i>
-                      </div>
+                          <label for="search-status" class="field-label">Location</label>
+                          <select id="search-status" name="status">
+                             <option value="any">Any Location</option>
+                                <option value="Batangas">Batangas</option>
+                                <option value="Bulacan">Bulacan</option>
+                                <option value="Cagayan">Cagayan</option>
+                                <option value="Cagayan de Oro">Cagayan de Oro</option>
+                                <option value="Cavite">Cavite</option>
+                                <option value="Cebu">Cebu</option>
+                                <option value="City of Manila">City of Manila</option>
+                                <option value="Davao">Davao</option>
+                                <option value="Iloilo">Iloilo</option>
+                                <option value="Isabela">Isabela</option>
+                                <option value="Laguna">Laguna</option>
+                                <option value="Makati City">Makati City</option>
+                                <option value="Mandaluyong City">Mandaluyong City</option>
+                                <option value="Muntinlupa">Muntinlupa</option>
+                                <option value="Nueva Ecija">Nueva Ecija</option>
+                                <option value="Palawan">Palawan</option>
+                                <option value="Pampanga">Pampanga</option>
+                                <option value="Pangasinan">Pangasinan</option>
+                                <option value="Paranaque City">Paranaque City</option>
+                                <option value="Pasay City">Pasay City</option>
+                                <option value="Pasig City">Pasig City</option>
+                                <option value="Quezon City">Quezon City</option>
+                                <option value="Quezon Province">Quezon Province</option>
+                                <option value="Taguig City">Taguig City</option>
+                                <option value="Tarlac">Tarlac</option>  
+                          </select>
+                          <i class="bi bi-geo-alt field-icon"></i>
+                        </div>
+                    
+
+                       <div class="search-field">
+                          <label for="search-status" class="field-label">Status</label>
+                          <select id="search-status" name="status">
+                            <option value="">Any Status</option>
+                            <option value="pre-selling">Pre-selling</option>
+                            <option value="rfo">Ready for Occupancy</option>
+                            <option value="sold-out">Sold Out</option>
+                          </select>
+                          <i class="bi bi-clock-history field-icon"></i>
+                        </div>
 
                       <div class="search-field">
-                        <label for="search-type" class="field-label">Property Type</label>
-                        <select id="search-type" name="property_type" required="">
-                          <option value="">All Types</option>
-                          <option value="house">Single House</option>
-                          <option value="apartment">Apartment</option>
-                          <option value="condo">Condominium</option>
-                          <option value="villa">Villa</option>
-                          <option value="commercial">Commercial</option>
-                        </select>
-                        <i class="bi bi-building field-icon"></i>
-                      </div>
+                      <label for="search-price" class="field-label">Price</label>
+                      <select id="search-price" name="price">
+                        <option value="">Any Price</option>
+                        <option value="0-1000000">Below ₱1M</option>
+                        <option value="1000000-5000000">₱1M – ₱5M</option>
+                        <option value="5000000-10000000">₱5M – ₱10M</option>
+                        <option value="10000000-20000000">₱10M – ₱20M</option>
+                        <option value="20000000-30000000">₱20M – ₱30M</option>
+                        <option value="30000000+">Above ₱30M</option>
+                      </select>
+                      <i class="bi bi-cash field-icon"></i>
+                    </div>
 
                       <div class="search-field">
-                        <label for="search-budget" class="field-label">Budget Range</label>
-                        <select id="search-budget" name="price_range" required="">
-                          <option value="">Any Price</option>
-                          <option value="0-300000">Under ₱300K</option>
-                          <option value="300000-600000">₱300K - ₱600K</option>
-                          <option value="600000-900000">₱600K - ₱900K</option>
-                          <option value="900000-1500000">₱900K - ₱1.5M</option>
-                          <option value="1500000+">Above ₱1.5M</option>
-                        </select>
-                        <i class="bi bi-currency-dollar field-icon"></i>
-                      </div>
-
-                      <div class="search-field">
-                        <label for="search-rooms" class="field-label">Bedrooms</label>
+                        <label for="search-rooms" class="field-label">Type</label>
                         <select id="search-rooms" name="bedrooms">
-                          <option value="">Any</option>
-                          <option value="1">1 Room</option>
-                          <option value="2">2 Rooms</option>
-                          <option value="3">3 Rooms</option>
-                          <option value="4">4 Rooms</option>
-                          <option value="5+">5+ Rooms</option>
+                          <option value="">Any Type</option>
+                          <option value="1">Condominium</option>
+                          <option value="2">House and Lot</option>
+                          <option value="3">Residential Lot</option>
+                          <option value="4">Commercial Lot</option>
+                          <option value="5+">Office</option>
                         </select>
                         <i class="bi bi-door-open field-icon"></i>
                       </div>
                     </div>
 
-                    <button type="submit" class="search-btn">
-                      <i class="bi bi-search"></i>
-                      <span>Find Properties</span>
-                    </button>
+                  <button type="submit" class="search-btn">
+                    <i class="bi bi-chat-dots"></i>
+                    <span>Message Us</span>
+                  </button>
                   </form>
                 </div>
 
@@ -165,22 +211,22 @@
               <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
                 <div class="visual-container">
                   <div class="featured-property">
-                    <img src="assets/img/real-estate/property-exterior-8.webp" alt="Featured Property" class="img-fluid">
+                    <img src="assets/img/frontindex/4.png" alt="Featured Property" class="img-fluid">
                     <div class="property-info">
-                      <div class="property-price">₱925,000</div>
+                      <div class="property-price">₱25,800,000</div>
                       <div class="property-details">
-                        <span><i class="bi bi-geo-alt"></i> Downtown District</span>
-                        <span><i class="bi bi-house"></i> 4 Bed, 3 Bath</span>
+                        <span><i class="bi bi-geo-alt"></i>Taguig City - Garden Court Residences</span>
+                        <span><i class="bi bi-house"></i>68sqm – 261sqm PRE-SELLING</span>
                       </div>
                     </div>
                   </div>
 
                   <div class="overlay-images">
                     <div class="overlay-img overlay-1">
-                      <img src="assets/img/real-estate/property-interior-4.webp" alt="Interior View" class="img-fluid">
+                      <img src="assets/img/frontindex/2.png" alt="Interior View" class="img-fluid">
                     </div>
                     <div class="overlay-img overlay-2">
-                      <img src="assets/img/real-estate/property-exterior-2.webp" alt="Exterior View" class="img-fluid">
+                      <img src="assets/img/frontindex/3.png" alt="Exterior View" class="img-fluid">
                     </div>
                   </div>
 
@@ -188,8 +234,8 @@
                     <div class="agent-profile">
                       <img src="assets/img/real-estate/agent-7.webp" alt="Agent Profile" class="agent-photo">
                       <div class="agent-info">
-                        <h4>Michael Chen</h4>
-                        <p>Senior Property Advisor</p>
+                        <h4>Charles Jefferson Segubre</h4>
+                        <p>International Property Specialist</p>
                         <div class="agent-rating">
                           <div class="stars">
                             <i class="bi bi-star-fill"></i>
@@ -227,7 +273,7 @@
           <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
             <div class="image-gallery">
               <div class="primary-image">
-                <img src="assets/img/real-estate/property-exterior-1.webp" alt="Modern Property" class="img-fluid">
+                <img src="assets/img/frontindex/ayalamongstime.avif" alt="Modern Property" class="img-fluid">
                 <div class="experience-badge">
                   <div class="badge-content">
                     <div class="number"><span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>+</div>
@@ -236,7 +282,7 @@
                 </div>
               </div>
               <div class="secondary-image">
-                <img src="assets/img/real-estate/property-interior-4.webp" alt="Luxury Interior" class="img-fluid">
+                <img src="assets/img/frontindex/ayalatime.avif" alt="Luxury Interior" class="img-fluid">
               </div>
             </div>
           </div>
@@ -312,21 +358,21 @@
 
             <div class="featured-property-main" data-aos="zoom-in" data-aos-delay="200">
               <div class="property-hero">
-                <img src="assets/img/real-estate/property-exterior-4.webp" alt="Luxury Estate" class="img-fluid">
+                <img src="assets/img/frontindex/parklins north/1.png" alt="Luxury Estate" class="img-fluid">
                 <div class="property-overlay">
                   <div class="property-badge-main premium">Premium</div>
                   <div class="property-stats">
                     <div class="stat-item">
                       <i class="bi bi-house-door"></i>
-                      <span>6 Bedrooms</span>
+                      <span>HIGH-RISE</span>
                     </div>
                     <div class="stat-item">
                       <i class="bi bi-droplet-fill"></i>
-                      <span>5 Bathrooms</span>
+                      <span>593</span>
                     </div>
                     <div class="stat-item">
                       <i class="bi bi-arrows-move"></i>
-                      <span>5,500 sq ft</span>
+                      <span>70sqm – 306sqm</span>
                     </div>
                   </div>
                 </div>
@@ -334,15 +380,25 @@
               <div class="property-hero-content">
                 <div class="property-header">
                   <div class="property-info">
-                    <h2><a href="property-details.html">Magnificent Estate with Garden Views</a></h2>
+                    <h2><a href="property-details.html">Parklinks North and South Towers</a></h2>
                     <div class="property-address">
                       <i class="bi bi-geo-alt-fill"></i>
-                      <span>Malibu, CA 90265</span>
+                      <span>Quezon City</span>
                     </div>
                   </div>
-                  <div class="property-price-main">₱4,850,000</div>
+                  <div class="property-price-main">₱26,900,000</div>
                 </div>
-                <p class="property-description">Luxurious estate nestled in exclusive Malibu hills featuring panoramic ocean views, infinity pool, wine cellar, and private tennis court. Architectural masterpiece with premium finishes throughout.</p>
+                <p class="property-description">
+                  <span class="short-text">
+                    Luxurious estate nestled in exclusive Malibu hills featuring panoramic ocean views, infinity pool, wine cellar, and private tennis court.
+                  </span>
+                  <span class="more-text" style="display: none;">
+                    Sprawling parks extend throughout the entire estate, creating a highly-integrated community enhanced by green spaces. Ayala Land Premier reveals a panorama of living, esteemed addresses within a dynamic growth corridor with Parklinks North and South Towers. Located at the intersection of Quezon City and Pasig, Parklinks is easily accessible via C-5, Ortigas Avenue, and Amang Rodriguez Avenue, connecting the estate to surrounding key commercial, retail, and institutional developments, including the country’s esteemed schools along Katipunan. A 35-hectare sustainable masterplan dedicates 50% to a network of dynamic parks and refreshing green spaces, woven into an array of retail and leisure spots, offices, and living spaces. Designed for high pedestrian mobility, parks are within a five-minute walk from any point in the estate. Ayala Land Premier presents residences embraced by the sky. Panoramic windows reveal endless views of the horizon, infusing space with abundant radiance. With the adjacent River Esplanade in the East and direct access to Parklinks Mall in the West, Parklinks North and South Towers enrich lifestyles with places for people to converge with nature and community. Unmatched ease elevates the comforts of a home bathed in light. A select collection of only 280 units are intuitively designed to suit distinct lifestyles with expansive living spaces that open up to commanding views. Floor-to-ceiling, wall-to-wall windows and generous balconies for every room within all residences imbue a sense of ease and openness to everyday experiences.
+                    <!-- You can paste the full long text here -->
+                  </span>
+                  <button class="read-more-btn" onclick="toggleReadMore(this)">Read more</button>
+                </p>
+
                 <div class="property-actions-main">
                   <a href="property-details.html" class="btn-primary-custom">Schedule Tour</a>
                   <a href="property-details.html" class="btn-outline-custom">View Gallery</a>
@@ -362,22 +418,22 @@
 
               <div class="sidebar-property-card" data-aos="fade-left" data-aos-delay="300">
                 <div class="sidebar-property-image">
-                  <img src="assets/img/real-estate/property-exterior-1.webp" alt="Modern Condo" class="img-fluid">
+                  <img src="assets/img/frontindex/arborlines.png" alt="Modern Condo" class="img-fluid">
                   <div class="sidebar-property-badge hot">Hot Deal</div>
                 </div>
                 <div class="sidebar-property-content">
-                  <h4><a href="property-details.html">Contemporary Downtown Condo</a></h4>
+                  <h4><a href="property-details.html">Arbor Lanes</a></h4>
                   <div class="sidebar-location">
                     <i class="bi bi-pin-map"></i>
-                    <span>Seattle, WA 98101</span>
+                    <span>Taguig City</span>
                   </div>
                   <div class="sidebar-specs">
-                    <span><i class="bi bi-house"></i> 3 BR</span>
-                    <span><i class="bi bi-droplet"></i> 2 BA</span>
-                    <span><i class="bi bi-rulers"></i> 2,100 sq ft</span>
+                    <span><i class="bi bi-house"></i>high-rise</span>
+                    <span><i class="bi bi-droplet"></i> 1073</span>
+                    <span><i class="bi bi-rulers"></i> 62sqm – 370sqm</span>
                   </div>
                   <div class="sidebar-price-row">
-                    <div class="sidebar-price">₱1,595,000</div>
+                    <div class="sidebar-price">₱23,700,000s</div>
                     <a href="property-details.html" class="sidebar-btn">View</a>
                   </div>
                 </div>
@@ -385,22 +441,22 @@
 
               <div class="sidebar-property-card" data-aos="fade-left" data-aos-delay="400">
                 <div class="sidebar-property-image">
-                  <img src="assets/img/real-estate/property-exterior-9.webp" alt="Family Home" class="img-fluid">
+                  <img src="assets/img/frontindex/Cavite.png" alt="Family Home" class="img-fluid">
                   <div class="sidebar-property-badge new">New Listing</div>
                 </div>
                 <div class="sidebar-property-content">
-                  <h4><a href="property-details.html">Elegant Family Residence</a></h4>
+                  <h4><a href="property-details.html">Ciela at Aéra Heights</a></h4>
                   <div class="sidebar-location">
                     <i class="bi bi-pin-map"></i>
-                    <span>Portland, OR 97201</span>
+                    <span>Cavite</span>
                   </div>
                   <div class="sidebar-specs">
-                    <span><i class="bi bi-house"></i> 4 BR</span>
-                    <span><i class="bi bi-droplet"></i> 3 BA</span>
-                    <span><i class="bi bi-rulers"></i> 3,100 sq ft</span>
+                    <span><i class="bi bi-house"></i>Pre-selling</span>
+                    <span><i class="bi bi-droplet"></i>1650000sqm</span>
+                    <span><i class="bi bi-rulers"></i> 446sqm – 1,987sqm</span>
                   </div>
                   <div class="sidebar-price-row">
-                    <div class="sidebar-price">₱925,000</div>
+                    <div class="sidebar-price">₱25,000,000 – 131,200,000</div>
                     <a href="property-details.html" class="sidebar-btn">View</a>
                   </div>
                 </div>
@@ -417,24 +473,23 @@
           <div class="col-xl-6" data-aos="fade-up" data-aos-delay="600">
             <div class="property-card-horizontal">
               <div class="property-image-horizontal">
-                <img src="assets/img/real-estate/property-interior-5.webp" alt="Penthouse" class="img-fluid">
+                <img src="assets/img/frontindex/versala.png" alt="Penthouse" class="img-fluid">
                 <div class="property-badge-horizontal exclusive">Exclusive</div>
               </div>
               <div class="property-content-horizontal">
-                <h3><a href="property-details.html">Luxury Penthouse Suite</a></h3>
+                <h3><a href="property-details.html">Versala Alviera</a></h3>
                 <div class="property-location-horizontal">
                   <i class="bi bi-geo-alt"></i>
-                  <span>Las Vegas, NV 89102</span>
+                  <span>Pampanga</span>
                 </div>
                 <div class="property-features">
-                  <span class="feature"><i class="bi bi-house"></i> 3 Bedrooms</span>
-                  <span class="feature"><i class="bi bi-droplet"></i> 3 Bathrooms</span>
-                  <span class="feature"><i class="bi bi-rulers"></i> 2,850 sq ft</span>
+                  <span class="feature"><i class="bi bi-droplet"></i> pre-selling</span>
+                  <span class="feature"><i class="bi bi-rulers"></i> 259sqm – 648sqm</span>
                 </div>
-                <p>Spectacular penthouse with floor-to-ceiling windows and private rooftop terrace overlooking the city skyline.</p>
+                <p>Refreshed by a natural atmosphere teeming with life, Alveo’s Versala is a 32-hectare residential neighborhood located at Alviera East. With nature as everyday’s constant inside and outside your neighborhood, green open spaces create a natural extension of home.</p>
                 <div class="property-footer-horizontal">
-                  <div class="property-price-horizontal">₱2,195,000</div>
-                  <a href="property-details.html" class="btn-view-horizontal">View Details</a>
+                  <div class="property-price-horizontal">₱8,800,000 – 29,800,000</div>
+               
                 </div>
               </div>
             </div>
@@ -443,28 +498,35 @@
           <div class="col-xl-6" data-aos="fade-up" data-aos-delay="700">
             <div class="property-card-horizontal">
               <div class="property-image-horizontal">
-                <img src="assets/img/real-estate/property-interior-8.webp" alt="Modern Home" class="img-fluid">
+                <img src="assets/img/frontindex/palmu.png" alt="Modern Home" class="img-fluid">
                 <div class="property-badge-horizontal new">New</div>
               </div>
               <div class="property-content-horizontal">
-                <h3><a href="property-details.html">Modern Architectural Gem</a></h3>
+                <h3><a href="property-details.html">South Palmgrove</a></h3>
                 <div class="property-location-horizontal">
                   <i class="bi bi-geo-alt"></i>
-                  <span>Phoenix, AZ 85001</span>
+                  <span>Batangas</span>
                 </div>
                 <div class="property-features">
-                  <span class="feature"><i class="bi bi-house"></i> 4 Bedrooms</span>
-                  <span class="feature"><i class="bi bi-droplet"></i> 3 Bathrooms</span>
-                  <span class="feature"><i class="bi bi-rulers"></i> 3,450 sq ft</span>
+
+                  <span class="feature"><i class="bi bi-droplet"></i> pre-selling</span>
+                  <span class="feature"><i class="bi bi-rulers"></i> 200sqm – 499sqm</span>
                 </div>
-                <p>Award-winning contemporary design with sustainable features, smart home technology, and resort-style backyard.</p>
+                <p>South Palmgrove is Alveo Land’s first residential address and Ayala Land’s first premium development in Lipa, Batangas. Enjoy a balanced living experience that leaves more time for the important things in life.</p>
                 <div class="property-footer-horizontal">
-                  <div class="property-price-horizontal">₱1,375,000</div>
-                  <a href="property-details.html" class="btn-view-horizontal">View Details</a>
+                  <div class="property-price-horizontal">₱6,500,000 – 23,700,000</div>
+                 <br><br>
                 </div>
               </div>
             </div>
           </div>
+          <section id="featured-services" class="featured-services section">
+          <div class="text-center" data-aos="zoom-in" data-aos-delay="600">
+                    <a href="services.html" class="btn-view-all">
+                      <span>View All Properties</span>
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
 
         </div>
 
@@ -472,134 +534,7 @@
 
     </section><!-- /Featured Properties Section -->
 
-    <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Featured Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-4">
-
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="service-card">
-              <div class="service-icon">
-                <i class="bi bi-search"></i>
-              </div>
-              <div class="service-info">
-                <h3><a href="service-details.html">Property Search</a></h3>
-                <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                <ul class="service-highlights">
-                  <li><i class="bi bi-check-circle-fill"></i> Comprehensive Listings</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Advanced Filtering</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Virtual Tours</li>
-                </ul>
-                <a href="service-details.html" class="service-link">
-                  <span>Explore Now</span>
-                  <i class="bi bi-arrow-up-right"></i>
-                </a>
-              </div>
-              <div class="service-visual">
-                <img src="assets/img/real-estate/property-interior-2.webp" class="img-fluid" alt="Property Search" loading="lazy">
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-            <div class="service-card">
-              <div class="service-icon">
-                <i class="bi bi-calculator"></i>
-              </div>
-              <div class="service-info">
-                <h3><a href="service-details.html">Property Valuation</a></h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
-                <ul class="service-highlights">
-                  <li><i class="bi bi-check-circle-fill"></i> Market Analysis</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Comparative Reports</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Investment Insights</li>
-                </ul>
-                <a href="service-details.html" class="service-link">
-                  <span>Get Valuation</span>
-                  <i class="bi bi-arrow-up-right"></i>
-                </a>
-              </div>
-              <div class="service-visual">
-                <img src="assets/img/real-estate/property-exterior-1.webp" class="img-fluid" alt="Property Valuation" loading="lazy">
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-        <div class="row g-4 mt-4">
-
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="400">
-            <div class="service-card">
-              <div class="service-icon">
-                <i class="bi bi-key"></i>
-              </div>
-              <div class="service-info">
-                <h3><a href="service-details.html">Property Rental</a></h3>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-                <ul class="service-highlights">
-                  <li><i class="bi bi-check-circle-fill"></i> Tenant Matching</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Lease Management</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Property Maintenance</li>
-                </ul>
-                <a href="service-details.html" class="service-link">
-                  <span>Start Renting</span>
-                  <i class="bi bi-arrow-up-right"></i>
-                </a>
-              </div>
-              <div class="service-visual">
-                <img src="assets/img/real-estate/property-interior-8.webp" class="img-fluid" alt="Property Rental" loading="lazy">
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="500">
-            <div class="service-card">
-              <div class="service-icon">
-                <i class="bi bi-shield-check"></i>
-              </div>
-              <div class="service-info">
-                <h3><a href="service-details.html">Investment Advisory</a></h3>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos</p>
-                <ul class="service-highlights">
-                  <li><i class="bi bi-check-circle-fill"></i> Portfolio Planning</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Risk Assessment</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Market Forecasting</li>
-                </ul>
-                <a href="service-details.html" class="service-link">
-                  <span>Learn More</span>
-                  <i class="bi bi-arrow-up-right"></i>
-                </a>
-              </div>
-              <div class="service-visual">
-                <img src="assets/img/real-estate/property-exterior-4.webp" class="img-fluid" alt="Investment Advisory" loading="lazy">
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-        <div class="text-center" data-aos="zoom-in" data-aos-delay="600">
-          <a href="services.html" class="btn-view-all">
-            <span>View All Services</span>
-            <i class="bi bi-arrow-right"></i>
-          </a>
-        </div>
-
-      </div>
-
-    </section><!-- /Featured Services Section -->
-
-    
-
+  
     
 
     <!-- Why Us Section -->
@@ -608,8 +543,10 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Why Us</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>We go beyond property listings we provide guidance, trust, and results. Our team is committed to helping you find the right property that fits your lifestyle, budget, and long-term goals. With deep market knowledge, transparent service, and a client-first mindset, we turn real estate decisions into confident choices.</p>
       </div><!-- End Section Title -->
+
+     
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -730,7 +667,7 @@
                   <div class="quote-icon mb-2">
                     <i class="bi bi-quote"></i>
                   </div>
-                  <p>"Working with this team made buying our first home a seamless experience. Their knowledge of the local market and dedication to finding the perfect property exceeded our expectations."</p>
+                  <p>" Hiravuelo was the best decision we made in finding our Ayala Land property. From day one, he was professional, patient, and truly attentive to our needs. He walked us through every step—from selecting the right unit to explaining the process clearly. We never felt pressured, only supported. Thanks to her guidance, we now have a beautiful home in one of Ayala’s premier communities. Highly recommended!"</p>
                   <div class="testimonial-author d-flex align-items-center mt-3">
                     <img src="assets/img/person/person-f-3.webp" alt="Client" class="author-image me-3">
                     <div>
@@ -751,7 +688,7 @@
 
     <!-- Call To Action Section -->
     <section class="call-to-action-1 call-to-action section" id="call-to-action">
-      <div class="cta-bg" style="background-image: url('assets/img/real-estate/showcase-3.webp');"></div>
+      <div class="cta-bg" style="background-image: url('assets/img/frontindex/ayalamongstime.avif');"></div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row justify-content-center">
@@ -759,7 +696,7 @@
 
             <div class="cta-content text-center">
               <h2>Need Help Finding Your Dream Property?</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+              <p>Let us guide you home. Whether you're searching for your first condo, a spacious family house, or a luxury investment property, our expert team is here to make your journey seamless. We offer personalized assistance, in-depth market knowledge, and a commitment to helping you find the perfect place that suits your lifestyle and budget.</p>
 
               <div class="cta-buttons">
                 <a href="#" class="btn btn-primary">Contact Us Today</a>
@@ -862,6 +799,7 @@ Start your journey to owning a timeless space today.</p>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/assets/js/readmore.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
