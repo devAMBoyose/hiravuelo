@@ -8395,7 +8395,7 @@ section,
   position: relative;
   overflow: hidden;
   border-radius: 15px;
-  margin-top: 50px;
+ 
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
@@ -8406,9 +8406,14 @@ section,
   display: block;
 }
 
+.h-97 {
+    height: 100% !important;
+}
+
 @media (max-width: 768px) {
   .contact-2 .contact-form-wrapper {
     padding: 30px;
+    min-height: 450px;
   }
 
   .contact-2 .contact-form-wrapper h2 {

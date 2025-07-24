@@ -81,94 +81,99 @@
     <section id="contact-2" class="contact-2 section">
 
       <!-- Map Section -->
-      <div class="map-container mb-5">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d15447.45420917298!2d121.01061882063996!3d14.549794384710541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3397b5fd613ebced%3A0x4ea0a9433b48ae97!2s2208%20Chino%20Roces%20Ave%2C%20Makati%20City%2C%20Metro%20Manila!3m2!1d14.550226599999998!2d121.0129415!5e0!3m2!1sen!2sph!4v1752676043457!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <section class="contact-section py-5">
+  <div class="container">
+
+    <div class="row align-items-stretch">
+      <!-- Left Column: Map -->
+      <div class="col-lg-6 mb-4">
+        <div class="map-container h-100 shadow rounded equal-height">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d15447.45420917298!2d121.01061882063996!3d14.549794384710541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3397b5fd613ebced%3A0x4ea0a9433b48ae97!2s2208%20Chino%20Roces%20Ave%2C%20Makati%20City%2C%20Metro%20Manila!3m2!1d14.550226599999998!2d121.0129415!5e0!3m2!1sen!2sph!4v1752676043457!5m2!1sen!2sph"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <!-- Right Column: Contact Form -->
+      <div class="col-lg-6 mb-4 d-flex">
+        <div data-aos="fade-up" data-aos-delay="100" class="contact-form-wrapper h-100 p-4 shadow rounded d-flex flex-column justify-content-between w-100 equal-height">
 
-        <!-- Contact Info -->
-        <div class="row g-4 mb-5" data-aos="fade-up" data-aos-delay="300">
-          <div class="col-md-6">
-            <div class="contact-info-card">
-              <div class="icon-box">
-                <i class="bi bi-geo-alt"></i>
-              </div>
-              <div class="info-content">
-                <h4>Location</h4>
-                <p>Avida Towers San Lorenzo (T1-2507) Chino Roces Ave.,</p>
-<p>Pio del Pilar, Makati, 1230,
-
-Philippines</p>
-
-              </div>
-            </div>
+          <div>
+            <h1 class="text-center mb-2">Send a Message</h1>
+            <p class="text-center mb-4">Have questions or inquiries? Fill out the form below and we'll get back to you shortly.</p>
+          
           </div>
 
-          <div class="col-md-6">
-            <div class="contact-info-card">
-              <div class="icon-box">
-                <i class="bi bi-telephone"></i>
-              </div>
-              <div class="info-content">
-                <h4>Phone &amp; Email</h4>
-                <p>+63 917 503 5090</p>
-                <p>charles@hiravuelo.com</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact Form -->
-        <div class="row justify-content-center mb-5" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-lg-10">
-            <div class="contact-form-wrapper">
-              <h2 class="text-center mb-4">Send a Message</h2>
-
-              <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="name" placeholder="Your Name" required="">
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="email" placeholder="Email Address" required="">
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="form-group">
-                      <textarea class="form-control" name="message" placeholder="Your Message" rows="6" required=""></textarea>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-
-                  <div class="col-12 text-center">
-                    <button type="submit" class="btn-submit">SEND MESSAGE</button>
-                  </div>
+          <form action="forms/contact.php" method="post" class="php-email-form mt-auto">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="name" placeholder="Your Name" required>
                 </div>
-              </form>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Your Message" required></textarea>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+
+              <div class="col-12 text-center">
+                <button type="submit" class="btn-submit">SEND MESSAGE</button>
+              </div>
             </div>
+          </form>
+
+        </div>
+      </div>
+    </div> <!-- /row for map and form -->
+
+    <!-- Contact Info -->
+    <div class="row g-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+      <div class="col-md-6">
+        <div class="contact-info-card">
+          <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+          <div class="info-content">
+            <h4>Location</h4>
+            <p>Avida Towers San Lorenzo (T1-2507) Chino Roces Ave.,</p>
+            <p>Pio del Pilar, Makati, 1230, Philippines</p>
           </div>
         </div>
-
       </div>
 
-    </section><!-- /Contact 2 Section -->
+      <div class="col-md-6">
+        <div class="contact-info-card">
+          <div class="icon-box"><i class="bi bi-telephone"></i></div>
+          <div class="info-content">
+            <h4>Phone &amp; Email</h4>
+            <p>+63 917 503 5090</p>
+            <p>charles@hiravuelo.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- /container -->
+</section>
+
 
   </main>
 
