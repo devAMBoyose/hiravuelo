@@ -1,2 +1,2 @@
 The .scss (Sass) files are only available in the pro version.
-You can buy it from: https://bootstrapmade.com/homespace-bootstrap-real-estate-template/
+You can buy it from: devarete.com
