@@ -1,0 +1,28 @@
+.quick-info-widget h4 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.info-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.info-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.info-list i {
+  font-size: 8px;
+  margin-right: 10px;
+  color: #0d6efd;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
