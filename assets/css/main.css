@@ -8410,7 +8410,10 @@ section,
     height: 100% !important;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> fc4540fbea147043b80f23a9cd5b2b84d5ca1023
 @media (max-width: 768px) {
   .contact-2 .contact-form-wrapper {
     padding: 30px;
